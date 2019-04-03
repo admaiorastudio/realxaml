@@ -1,6 +1,8 @@
 # RealXaml
 RealXaml is a live viewer and hot reloader for Xamarin Forms. 
 
+[![RealXaml Video](http://www.admaiorastudio.com/wp-content/uploads/2019/04/realxaml.video_.thumb_.png)](https://youtu.be/jJO3xjcD8lQ)
+
 ## Do I need it?
 No if you don't like stuff like Hot Reload and Live Reload :)
 
@@ -119,4 +121,24 @@ Then go to the `MainPage.xaml.cs' class and add the event handler!
 ```
 
 Now select the core project you have and BUILD! Try and see :)
+
 ![alt text](http://www.admaiorastudio.com/wp-content/uploads/2019/04/realxaml.build_.png)
+
+##Troubleshooting
+
+### RealXaml enable is not working
+If enabling of RealXaml gives you error you should check:
+
+- You are running Visual Studio 2017 as Administrator
+
+- You have the latest .NET Core runtime installed
+https://dotnet.microsoft.com/download
+
+### iOS is not working
+RealXaml uses SignalR behind the scene. There's a known bug in Xamarin.iOS which prevent SignalR to work. To fix this issue just read this.
+https://github.com/mono/mono/issues/11731
+
+Basically you have to remove a file from your Xamarin.iOS installation.
+Move the facade assembly away from its install location:
+
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\ReferenceAssemblies\Microsoft\Framework\Xamarin.iOS\v1.0\Facades\System.Threading.Tasks.Extensions.dll

@@ -19,7 +19,8 @@ To activate RealXaml just go to the Tools menu in Visual Studio and click on the
 
 ![alt text](http://www.admaiorastudio.com/wp-content/uploads/2019/04/realxaml.activate.png)
 
-If the activation is successfully done a message will appear on the screen.
+If the activation is successfully done a message will appear on the screen. 
+If activaion fails, please see troubleshoot section down here :)
 
 ![alt text](http://www.admaiorastudio.com/wp-content/uploads/2019/04/realxaml.everything.ok_.png)
 
@@ -27,4 +28,18 @@ Then you need to install the AdMaiora.RealXaml.Client nuget package in your Xama
 https://www.nuget.org/packages/AdMaiora.RealXaml.Client/
 
 ![alt text](http://www.admaiorastudio.com/wp-content/uploads/2019/04/realxaml.nugetinstall.png)
+
+Once the nuget package is installed, using RealXaml is very easy! Just follow these steps.
+First you have to modify a little your App.xaml.cs class. Something like this should be fine.
+
+```c#
+        public App()
+        {
+            AdMaiora.RealXaml.Client.AppManager.Init(this);
+            InitializeComponent();
+
+            MainPage = new MainPage();
+        }
+```
+
 

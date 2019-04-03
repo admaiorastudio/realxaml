@@ -125,7 +125,7 @@ Now select the core project you have and BUILD! Try and see :)
 
 ![alt text](http://www.admaiorastudio.com/wp-content/uploads/2019/04/realxaml.build_.png)
 
-##Troubleshooting
+## Troubleshooting
 
 ### RealXaml enable is not working
 If enabling of RealXaml gives you error you should check:

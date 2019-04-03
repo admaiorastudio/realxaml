@@ -1,0 +1,57 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2050
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RealXaml", "RealXaml\RealXaml.csproj", "{0C7C3C77-A74D-4A84-A349-4E70159BDE27}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RealXaml.Common", "RealXaml.Common\RealXaml.Common.csproj", "{3BE6A73F-DF89-42B4-87F6-C59505F22A29}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "0.Common", "0.Common", "{383D4098-078E-4734-B1DE-73A6EF532B0D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3.Extension", "3.Extension", "{1233CDAA-E716-41A3-A500-CDDDBF8C3CD7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1.Server", "1.Server", "{8905B8CE-0AD2-4246-B5AB-180D70044A94}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.Client", "2.Client", "{CC68D344-AEAB-44ED-871B-468A52E4C3FC}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RealXaml.Server", "RealXaml.Server\RealXaml.Server.csproj", "{4CC9D94A-C41E-41E4-8CDD-29B4B1B7D16A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RealXaml.Client", "RealXaml.Client\RealXaml.Client.csproj", "{19027477-8C4A-4C7D-B015-5AF7A8B73D0A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0C7C3C77-A74D-4A84-A349-4E70159BDE27}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0C7C3C77-A74D-4A84-A349-4E70159BDE27}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0C7C3C77-A74D-4A84-A349-4E70159BDE27}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0C7C3C77-A74D-4A84-A349-4E70159BDE27}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3BE6A73F-DF89-42B4-87F6-C59505F22A29}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3BE6A73F-DF89-42B4-87F6-C59505F22A29}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3BE6A73F-DF89-42B4-87F6-C59505F22A29}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3BE6A73F-DF89-42B4-87F6-C59505F22A29}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4CC9D94A-C41E-41E4-8CDD-29B4B1B7D16A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4CC9D94A-C41E-41E4-8CDD-29B4B1B7D16A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4CC9D94A-C41E-41E4-8CDD-29B4B1B7D16A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4CC9D94A-C41E-41E4-8CDD-29B4B1B7D16A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{19027477-8C4A-4C7D-B015-5AF7A8B73D0A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{19027477-8C4A-4C7D-B015-5AF7A8B73D0A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{19027477-8C4A-4C7D-B015-5AF7A8B73D0A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{19027477-8C4A-4C7D-B015-5AF7A8B73D0A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{0C7C3C77-A74D-4A84-A349-4E70159BDE27} = {1233CDAA-E716-41A3-A500-CDDDBF8C3CD7}
+		{3BE6A73F-DF89-42B4-87F6-C59505F22A29} = {383D4098-078E-4734-B1DE-73A6EF532B0D}
+		{4CC9D94A-C41E-41E4-8CDD-29B4B1B7D16A} = {8905B8CE-0AD2-4246-B5AB-180D70044A94}
+		{19027477-8C4A-4C7D-B015-5AF7A8B73D0A} = {CC68D344-AEAB-44ED-871B-468A52E4C3FC}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {27CD7A11-84C3-4621-955A-8DD1DD3F1DDD}
+	EndGlobalSection
+EndGlobal

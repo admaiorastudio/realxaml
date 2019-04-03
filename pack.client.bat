@@ -1,0 +1,1 @@
+nuget pack ".\RealXaml.Client\Package.nuspec"

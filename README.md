@@ -1,6 +1,7 @@
 # RealXaml
 RealXaml is a live viewer and hot reloader for Xamarin Forms. 
 
+## See RealXaml in action!)
 [![RealXaml Video](http://www.admaiorastudio.com/wp-content/uploads/2019/04/realxaml.video_.thumb_.png)](https://youtu.be/jJO3xjcD8lQ)
 
 ## Do I need it?

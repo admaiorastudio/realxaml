@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>AdMaiora.RealXaml.Client</id>
+    <version>1.0.0</version>
+	<title>RealXaml</title>
+    <authors>Ad Maiora Studio</authors>
+    <owners>Ad Maiora Studio</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>RealXaml is a live viewer for Xamarin Forms. Edit your xaml and see your changes in realtime (hot reload). It allows also to compile and deploy your app core assembly in real time (live reload). This package runs along with the RealXaml Visual Studio 2017 extension.</description>
+    <releaseNotes>First working version.</releaseNotes>
+    <copyright>Copyright Ad Maiora Studio ©  2019</copyright>
+	<projectUrl>https://github.com/admaiorastudio/realxaml.client</projectUrl>
+	<iconUrl>http://www.admaiorastudio.com/wp-content/uploads/2016/10/logo-nuget.png</iconUrl>
+    <tags>Xaml Xamarin Forms XamlViewer Viewer Live Reload Hot Reload</tags>
+    <dependencies>
+	  <group targetFramework=".NETStandard2.0">
+        <dependency id="Microsoft.AspNetCore.SignalR.Client" version="1.1.0" />	   
+        <dependency id="Xamarin.Forms" version="3.3.0" />	   
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <!--Core .NET Standard -->
+    <file src="bin\Release\netstandard2.0\RealXaml.Client.dll"
+          target="lib\.NETStandard2.0\RealXaml.Client.dll"/>
+    <file src="bin\Release\netstandard2.0\RealXaml.Client.pdb"
+          target="lib\.NETStandard2.0\RealXaml.Client.pdb"/>             
+  </files>
+</package>

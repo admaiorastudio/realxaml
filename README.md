@@ -30,8 +30,8 @@ https://www.nuget.org/packages/AdMaiora.RealXaml.Client/
 ![alt text](http://www.admaiorastudio.com/wp-content/uploads/2019/04/realxaml.nugetinstall.png)
 
 Once the nuget package is installed, using RealXaml is very easy! Just follow these steps.
-First you have to modify a little your App.xaml.cs class. Something like this should be fine.
 
+First you have to modify a little your `App.xaml.cs` class. Something like this should be fine.
 ```c#
         public App()
         {
@@ -42,4 +42,81 @@ First you have to modify a little your App.xaml.cs class. Something like this sh
         }
 ```
 
+Then go to the `MainPage.xaml.cs' and do the same thing!
+```c#
+        public MainPage()
+        {
+            AdMaiora.RealXaml.Client.AppManager.Init(this);
+            InitializeComponent();
+        }
+```
 
+One more thing to do, just another simple change to your `MainPage.xaml.cs'. You have to add an attribute to tell RealXaml what page should be used as main page during hot reloading!
+```c#
+    [AdMaiora.RealXaml.Client.MainPage]
+    [XamlCompilation(XamlCompilationOptions.Compile)]
+    public partial class MainPage : ContentPage
+    {
+```
+
+Note that we are building a single page application. Remember your `App.xaml.cs` constructor? If you want to take advange of navigation between pages in Xamarin.Forms you have to change your main page initialization like this. 
+```c#
+        public App()
+        {
+            AdMaiora.RealXaml.Client.AppManager.Init(this);
+            InitializeComponent();
+
+            MainPage = new NavigationPage(new MainPage());
+        }
+```
+
+When using a `NavigationPage` as `MainPage` you should also change the attribute used to mark the MainPage for RealXaml. 
+```c#
+    [AdMaiora.RealXaml.Client.RootPage]
+    [XamlCompilation(XamlCompilationOptions.Compile)]
+    public partial class MainPage : ContentPage
+    {
+```
+
+# You're done!
+
+Try now changing the Xaml on your `MainPage.xaml' file and press the save button! You should see changes in real time.
+This could be done having your app in debug or not, in simulator or real device!
+
+# There's more!
+
+Try stop the debug session and run manually your application in your simulator or device. 
+Then go to the `MainPage.xaml' and a new button like this.
+```xaml
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage 
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:RealXamlTest2"
+    x:Class="RealXamlTest2.MainPage"
+    BackgroundColor="#FFFFAA">
+
+    <StackLayout>
+        <!-- Place new controls here -->
+        <Label Text="Welcome to Xamarin.Forms!" 
+           HorizontalOptions="Center"
+           VerticalOptions="CenterAndExpand" />
+		   
+		   
+		<!-- Add this button now -->
+        <Button Text="Hello RealXaml" Clicked="HelloButton_Clicked"/>
+    </StackLayout>
+
+</ContentPage>
+```
+
+Then go to the `MainPage.xaml.cs' class and add the event handler!
+```c#
+        private async void HelloButton_Clicked(object sender, EventArgs e)
+        {
+            await DisplayAlert("Hello World", "This is the first version of RealXaml", "Great");
+        }
+```
+
+Now select the core project you have and BUILD! Try and see :)
+![alt text](http://www.admaiorastudio.com/wp-content/uploads/2019/04/realxaml.build_.png)

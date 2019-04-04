@@ -10,6 +10,10 @@ No if you don't like stuff like Hot Reload and Live Reload :)
 ## How it helps me?
 It speeds up the development of Xamarin.Forms applications letting you to edit .xaml files and see changes in real time. It also allow you to deploy the core assembly of your app to see instant changes without a full compile in all devices and simulator.
 
+## What do you need to use it?
+- [Visual Studio 2017 Extension](https://marketplace.visualstudio.com/items?itemName=AdMaioraStudio.RealXaml)
+- [AdMaiora.RealXaml.Client nuget package](https://www.nuget.org/packages/AdMaiora.RealXaml.Client/)
+
 ## Getting started
 To start use RealXaml in your solution you have to:
 

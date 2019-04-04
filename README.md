@@ -13,6 +13,7 @@ It speeds up the development of Xamarin.Forms applications letting you to edit .
 ## What do you need to use it?
 - [Visual Studio 2017 Extension](https://marketplace.visualstudio.com/items?itemName=AdMaioraStudio.RealXaml)
 - [AdMaiora.RealXaml.Client nuget package](https://www.nuget.org/packages/AdMaiora.RealXaml.Client/)
+- [.NET Core runtime](https://dotnet.microsoft.com/download)
 
 ## Getting started
 To start use RealXaml in your solution you have to:

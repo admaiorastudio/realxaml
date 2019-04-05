@@ -11,6 +11,7 @@ No if you don't like stuff like Hot Reload and Live Reload :)
 It speeds up the development of Xamarin.Forms applications letting you to edit .xaml files and see changes in real time. It also allow you to deploy the core assembly of your app to see instant changes without a full compile in all devices and simulator.
 
 ## What do you need to use it?
+- [Visual Studio 2019 Extension](https://marketplace.visualstudio.com/items?itemName=AdMaioraStudio.RealXaml)
 - [Visual Studio 2017 Extension](https://marketplace.visualstudio.com/items?itemName=AdMaioraStudio.RealXaml)
 - [AdMaiora.RealXaml.Client nuget package](https://www.nuget.org/packages/AdMaiora.RealXaml.Client/)
 - [.NET Core runtime](https://dotnet.microsoft.com/download)
@@ -18,7 +19,7 @@ It speeds up the development of Xamarin.Forms applications letting you to edit .
 ## Getting started
 To start use RealXaml in your solution you have to:
 
-First install the RealXaml Visual Studio 2017 extension. (2019 version will come very shortly)
+First install the RealXaml Visual Studio extension. (2019 version will come very shortly)
 https://marketplace.visualstudio.com/items?itemName=AdMaioraStudio.RealXaml
 
   
@@ -135,7 +136,7 @@ Now select the core project you have and BUILD! Try and see :)
 ### RealXaml enable is not working
 If enabling of RealXaml gives you error you should check:
 
-- You are running Visual Studio 2017 as Administrator
+- You are running Visual Studio as Administrator
 
 - You have the latest .NET Core runtime installed
 https://dotnet.microsoft.com/download

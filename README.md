@@ -19,7 +19,7 @@ It speeds up the development of Xamarin.Forms applications letting you to edit .
 ## Getting started
 To start use RealXaml in your solution you have to:
 
-First install the RealXaml Visual Studio extension. (2019 version will come very shortly)
+1. Install the RealXaml Visual Studio extension.
 https://marketplace.visualstudio.com/items?itemName=AdMaioraStudio.RealXaml
 
   
@@ -33,7 +33,7 @@ If activaion fails, please see troubleshoot section down here :)
 
 ![alt text](http://www.admaiorastudio.com/wp-content/uploads/2019/04/realxaml.everything.ok_.png)
 
-Then you need to install the AdMaiora.RealXaml.Client nuget package in your Xamarin.Forms app solution.
+2. Install the AdMaiora.RealXaml.Client nuget package in your Xamarin.Forms app solution.
 https://www.nuget.org/packages/AdMaiora.RealXaml.Client/
 
 ![alt text](http://www.admaiorastudio.com/wp-content/uploads/2019/04/realxaml.nugetinstall.png)
@@ -89,13 +89,13 @@ When using a `NavigationPage` as `MainPage` you should also change the attribute
 
 # You're done!
 
-Try now changing the Xaml on your `MainPage.xaml' file and press the save button! You should see changes in real time.
-This could be done having your app in debug or not, in simulator or real device!
+Try now change the Xaml on your `MainPage.xaml' file and press the save button! You should see changes in real time.
+This works either your app is in debug or not, in a emulator or a real device!
 
 # There's more!
 
-Try stop the debug session and run manually your application in your simulator or device. 
-Then go to the `MainPage.xaml' and a new button like this.
+Try now to stop the debug session and run manually your application in your emulator or device. 
+Then go to the `MainPage.xaml' and a new button in the xaml definition like this.
 ```xaml
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage 
@@ -119,7 +119,7 @@ Then go to the `MainPage.xaml' and a new button like this.
 </ContentPage>
 ```
 
-Then go to the `MainPage.xaml.cs' class and add the event handler!
+Then go to the `MainPage.xaml.cs' class and add the code for the event handler!
 ```c#
         private async void HelloButton_Clicked(object sender, EventArgs e)
         {

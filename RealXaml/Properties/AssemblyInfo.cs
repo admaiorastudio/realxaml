@@ -7,11 +7,11 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("RealXaml")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("RealXaml Visual Studio Extension")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
+[assembly: AssemblyCompany("Ad Maiora Studio")]
 [assembly: AssemblyProduct("RealXaml")]
-[assembly: AssemblyCopyright("")]
+[assembly: AssemblyCopyright("Copyright ©  2018")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

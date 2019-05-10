@@ -175,6 +175,7 @@ namespace AdMaiora.RealXaml.Client
             // Emulators loopback addresses
             IPAddress[] loopbackAddresses = new[]
             {
+                IPAddress.Parse("127.0.0.1"),
                 IPAddress.Parse("10.0.2.2"),
                 IPAddress.Parse("10.0.3.2"),
                 IPAddress.Parse("169.254.80.80")

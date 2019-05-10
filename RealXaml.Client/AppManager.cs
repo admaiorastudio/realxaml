@@ -644,9 +644,12 @@ namespace AdMaiora.RealXaml.Client
             if (itemType != null
                 && itemType.BaseType == typeof(Xamarin.Forms.Application))
             {
-                app.Resources.Clear();
-                app.LoadFromXaml(xaml);
-
+                Device.BeginInvokeOnMainThread(
+                    () =>
+                    {
+                        app.Resources.Clear();
+                        app.LoadFromXaml(xaml);
+                    });
                 // Do we need to refresh pages?
                 if (refresh)
                 {
